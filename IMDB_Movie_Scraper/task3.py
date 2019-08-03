@@ -1,6 +1,6 @@
 #third task-----
 from task1 import*
-def group_decate(top_movie):
+def group_decade(top_movie):
 	movie_by_de = {}
 	for movie_de in top_movies:
 		year = movie_de['year'] % 10
@@ -10,5 +10,5 @@ def group_decate(top_movie):
 		else:
 			movie_by_de[year_de] =[movie_de]
 	return (movie_by_de)
-group=(group_decate(top_movies))
+group=(group_decade(top_movies))
 pprint.pprint(group)
